@@ -48,7 +48,7 @@ async function carregarCatalogo() {
         btn.textContent = "Faça seu orçamento sem compromisso";
 
         const numero = "5585988583274";
-        const mensagem = `Olá, gostaria de um orçamento do produto "${nome}".\n \n Segue link da imagem: ${img1}`;
+        const mensagem = `Olá, gostaria de um orçamento do produto "${nome}".\n\n Segue link da imagem: ${img1}`;
         const linkWhats = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
         btn.addEventListener("click", () => {
