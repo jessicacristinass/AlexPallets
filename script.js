@@ -1,6 +1,6 @@
 const sheetId = "1PxAoDKr2gaB2O21RnlfLRlxK2W2n-Bge8exGvfMPFzo";
 const apiKey = "AIzaSyCqjXbbFMejFBIBuouLIdZ0rgnLNZKqP64";
-const range = "Página1!A3:E";
+const range = "Página1!A3:F";
 
 async function carregarCatalogo() {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
@@ -10,7 +10,7 @@ async function carregarCatalogo() {
     const catalogo = document.getElementById("catalogo");
 
     data.values.forEach(item => {
-        const [nome, descrição, img1, img2, img3] = item;
+        const [nome, descrição, img1, img2, img3, insta] = item;
 
         const card = document.createElement("div");
         card.className = "card";
@@ -48,7 +48,7 @@ async function carregarCatalogo() {
         btn.textContent = "Faça seu orçamento sem compromisso";
 
         const numero = "5585988583274";
-        const mensagem = `Olá, gostaria de um orçamento do produto "${nome}".\n\n Segue link da imagem: ${img1}`;
+        const mensagem = `Olá, gostaria de um orçamento do produto "${nome}".\nEsse: ${insta}`;
         const linkWhats = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
         btn.addEventListener("click", () => {
