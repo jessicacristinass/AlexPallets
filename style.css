@@ -37,6 +37,14 @@ body{
     padding: 20px;
 }
 
+.card {
+    perspective: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 1024px) {
     #catalogo {
         grid-template-columns: repeat(3, 1fr);
@@ -51,14 +59,6 @@ body{
     .card {
         height: 300px;
     }
-}
-
-.card {
-    perspective: 1000px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card-inner {
