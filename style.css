@@ -47,6 +47,10 @@ body{
     #catalogo {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .card {
+        height: 300px;
+    }
 }
 
 .card {
