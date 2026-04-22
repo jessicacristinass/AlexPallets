@@ -10,7 +10,9 @@ body{
     justify-content: space-between;
     img {
         border-radius: 50%;
+        height: 40%;
     };
+    
     h1 {
         flex: 1;
         text-align: center;
