@@ -10,6 +10,7 @@ body{
     justify-content: space-between;
     img {
         border-radius: 50%;
+        height: 65%
     };
     
     h1 {
